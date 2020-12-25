@@ -4,3 +4,38 @@
     justify-content: center;
     padding: 24px;
 }
+
+.createPost__loggedIn{
+    background-color: #fff;
+    width: 100%;
+    max-width: 650px;
+    padding: 20px;
+}
+
+.createPost__textarea{
+    border: none;
+    outline: none;
+    width: 100%;
+    resize: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+.createPost__loggedInBottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.createPost__uploadBtn{
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+}
+
+#image-preview{
+    display: none;
+    height: 80px;
+    margin: 12px 0;
+    border-radius: 4px;
+}

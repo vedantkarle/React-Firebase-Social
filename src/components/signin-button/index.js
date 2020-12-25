@@ -10,7 +10,6 @@ const SignInBtn = () => {
   const signInBtnClick = async () => {
     let user = await signInWithGoogle();
     if (user) setUser(user);
-    console.log(user);
   };
 
   return (
