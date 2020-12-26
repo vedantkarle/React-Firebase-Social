@@ -1,5 +1,5 @@
 import React from "react";
-import { CreatePost, Navbar } from "../../containers";
+import { CreatePost, Feed, Navbar } from "../../containers";
 import "./style.css";
 
 const Home = () => {
@@ -7,6 +7,7 @@ const Home = () => {
     <div className="home">
       <Navbar />
       <CreatePost />
+      <Feed />
     </div>
   );
 };

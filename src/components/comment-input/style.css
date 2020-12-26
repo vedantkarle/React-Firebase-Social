@@ -1,0 +1,14 @@
+.comment__input{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+}
+
+.comment__input__textarea{
+    outline: none;
+    border: none;
+    resize: none;
+    width: 100%;
+    margin: 8px 12px;
+    font-family: 'Poppins', sans-serif;
+}

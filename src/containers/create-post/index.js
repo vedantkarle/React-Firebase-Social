@@ -61,6 +61,12 @@ const CreatePost = () => {
                 userPhoto: user.photoURL,
               });
             });
+
+          setCaption("");
+          setImage(null);
+          setProgress(0);
+
+          document.getElementById("image-preview").style.display = "none";
         }
       );
     }
