@@ -9,6 +9,13 @@
     border: none;
     resize: none;
     width: 100%;
-    margin: 8px 12px;
+    margin: 14px;
     font-family: 'Poppins', sans-serif;
+}
+
+.comment__input__btn{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }

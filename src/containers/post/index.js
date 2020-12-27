@@ -1,9 +1,12 @@
 import React, { useContext } from "react";
 import { Comment, CommentInput } from "../../components";
+import { UserContext } from "../../contexts/user";
 import { db, storage } from "../../firebase";
 import "./style.css";
 
 const Post = ({ userPhoto, username, id, photoURL, caption, comments }) => {
+  const [user, setUser] = useContext(UserContext).user;
+
   const deletePost = () => {
     //1.delete image from firebase storage
 
@@ -66,7 +69,7 @@ const Post = ({ userPhoto, username, id, photoURL, caption, comments }) => {
         </p>
       </div>
 
-      <CommentInput id={id} />
+      {user ? <CommentInput comments={comments} id={id} /> : <></>}
 
       {comments ? <h5 style={{ marginTop: "8px" }}>Comments:</h5> : <></>}
 
